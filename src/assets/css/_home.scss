@@ -1,0 +1,250 @@
+@charset "utf-8";
+// 首页
+.home{
+  .project-option{
+    margin: 16px 0;
+    .option-item+.option-item{
+      margin-left: 10px;
+    }
+  }
+  .card-list {
+    width: 1220px;
+  }
+  .add-project {
+    width: 816px;
+    min-width: 816px;
+  }
+  .select-templet .templet-box li span {
+      max-width: 6em;
+  }
+  .project-name {
+    cursor: pointer;
+  }
+  .project-list{
+    @include clear;
+  }
+  .current{
+    background-color: #f8f8f8;
+  }
+  // 卡片形式
+  .card-list{
+    width: 1216px;
+    margin-left: -16px;
+    .new-project{
+      text-align: center;
+      font-size: 14px;
+      a{
+        color: $blue;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      i{
+        font-size: 30px;
+        display: block;
+        margin-top: 25px;
+      }
+    }
+    .project-item{
+      @include transition(box-shadow,top);
+      @include float;
+      @include radius;
+      position: relative;
+      top:0;
+      background-color: #fff;
+      border:1px solid $line;
+      width: 261px;
+      height: 98px;
+      margin:0 0 16px 16px;
+      padding: 15px 10px 15px 15px;
+      color: #666;
+      &:hover{
+        top: -3px;
+        box-shadow:0 0 14px rgba(0,0,0,0.3);
+      }
+    }
+    dt{
+      margin-bottom: 10px;
+      i{
+        display: none;
+      }
+    }
+    dd{
+      margin-top: 5px;
+    }
+    .project-name{
+      font-size: 14px;
+      font-weight: bolder;
+      a{
+        @extend %text-overflow;
+        max-width: 20em;
+        color: $gray;
+        display: block;
+        &:hover{
+          color: $blue;
+        }
+      }
+    }
+    .card-icon{
+      @include radius(100%);
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      color: #fff;
+      font-size: 14px;
+      margin-right: 4px;
+    }
+    .el-icon-personnel{
+      background-color: #7ed2a4;
+    }
+    .el-icon-time1{
+      background-color: #7ecefd;
+    }
+    .project-opt{
+      text-align: right;
+      margin:0;
+    }
+  }
+  // 列表形式
+  .table-list{
+    background-color:#fff;
+    padding:0 20px;
+    .project-item{
+      @include transition(box-shadow);
+      font-size: 14px;
+      border-top:1px solid $line;
+      height: 50px;
+      line-height: 50px;
+      padding:0 10px;
+      color: #666;
+      &:hover{
+        box-shadow:0 0 14px rgba(0,0,0,0.3);
+      }
+    }
+    .new-project{
+      padding:0;
+      border-top:none;
+      a{
+        height: 50px;
+        line-height: 50px;
+        display: block;
+        color: $blue;
+      }
+      i{
+        font-size: 30px;
+        position: relative;
+        top: 6px;
+        margin-right: 4px;
+      }
+    }
+    dl{
+      @include clear;
+    }
+    dt,dd{
+      @include float;
+    }
+    dt{
+      position: relative;
+      i{
+        position: absolute;
+        top: 16px;
+        left: 0;
+        font-size: 20px;
+      }
+    }
+    .project-name{
+      padding-left:30px;
+      a{
+        @extend %text-overflow;
+        width: 470px;
+        color: $gray;
+        display: block;
+      }
+    }
+    .card-icon{
+      display: none;
+    }
+    .project-author{
+      @extend %text-overflow;
+      width: 200px;
+    }
+    .project-time{
+      width: 300px;
+    }
+    .project-opt{
+      @include float(right);
+    }
+  }
+  // 新建模版 start
+  .add-templet{
+    width:420px;
+  }
+  // 新建模版 end
+  // 新建项目 start
+  .add-project{
+    width:800px;
+  }
+  .select-templet{
+    @include clear;
+    .templet-tree{
+      @include float;
+      width: 198px;
+      height: 338px;
+      margin-right: 10px;
+      border:1px solid $line;
+      background-color:#f3f3f3;
+      overflow: auto;
+    }
+    .templet-box{
+      height: 340px;
+      overflow: auto;
+      li{
+        @include float;
+        @include radius;
+        cursor: pointer;
+        width: 108px;
+        height: 83px;
+        margin:0 0 10px 10px;
+        padding: 10px;
+        border:1px solid transparent;
+        text-align: center;
+        background: lighten($blue,33%) url(../img/ico-templet.png) center 20px no-repeat;
+        &:hover{
+          border-color:$blue;
+        }
+        &.active{
+          border-color:$blue;
+        }
+        span{
+          @extend %text-overflow;
+          max-width: 9em;
+          display: inline-block;
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+  // 新建项目 end
+  .upload-card{
+    .el-upload{
+      display: block;
+    }
+    .el-upload-dragger{
+      width: 100%;
+      height: 340px;
+    }
+    .el-icon-upload{
+      margin: 90px 0 16px;
+      font-size: 100px;
+      color: $icon;
+    }
+    .el-upload__tip{
+      color: $icon;
+      em{
+        color: $blue;
+      }
+    }
+  }
+}

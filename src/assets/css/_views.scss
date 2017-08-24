@@ -1,0 +1,454 @@
+@charset "utf-8";
+// ----------------01.整体----------------
+body,html{
+  width: 100%;
+  height: 100%;
+  background-color:#f7f7f7;
+}
+.body{
+  width: 100%;
+  height: 100%;
+  font-size:12px;
+}
+// ----------------02.头部  z-index=2----------------
+.head{
+  position: relative;
+  z-index: 2;
+  height:55px;
+  font-size: 15px;
+  border-bottom: 1px solid #cfcfcf;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  background-color: #fff;
+  .logo{
+    @include float;
+    height: 55px;
+    width: 284px;
+    background: transparent url(../img/logo.png) 0 center no-repeat;
+    text-indent: -9999em;
+    margin-left: 10px;
+    a{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .nav{
+    @include float;
+    line-height: 52px;
+    margin-left: 20px;
+    li{
+      display: inline-block;
+    }
+    a{
+      color:$gray;
+      padding: 0 10px;
+      display: block;
+      border-bottom:3px solid transparent;
+      &:hover{
+        color: $blue;
+      }
+      &.active{
+        font-weight: bolder;
+        border-bottom:3px solid $blue;
+        color: $blue;
+      }
+    }
+  }
+  .head-right{
+    @include float(right);
+    margin: 14px 10px 0 0;
+    .head-other{
+      @include float;
+      position: relative;
+      top: 5px;
+      margin-right: 20px;
+    }
+    .help{
+      cursor: help;
+      padding-right:5px;
+      color: $light-gray;
+      i{
+        font-size: 20px;
+        color: $icon;
+      }
+    }
+    .news{
+      position: relative;
+      color: $light-gray;
+      i{
+        font-size: 20px;
+        color: $icon;
+      }
+    }
+    .login-info{
+      @include float;
+      .avatar{
+        @include radius(100%);
+      }
+    }
+  }
+}
+// ----------------03.侧边----------------
+.sidebar{
+  position: absolute;
+  top: 56px;
+  bottom:0;
+  background-color:#f3f3f3;
+  width: 219px;
+  border-right:1px solid $line;
+  padding-top:18px;
+  overflow: auto;
+}
+// ----------------04.操作栏----------------
+// .ui-option>(.option-left+.option-right)
+.ui-option{
+  @include clear;
+  margin: 10px;
+  .option-left{
+    @include float;
+  }
+  .option-right{
+    @include float(right);
+  }
+  .option-item{
+    @include float;
+    font-size: 12px;
+    line-height: 31px;
+    .count-num{
+      font-size: 12px;
+      margin-right: 10px;
+      color: $gray;
+      b{
+        color: $blue;
+        margin: 0 5px;
+      }
+    }
+    // 分隔线.option-item>span.split
+    .split{
+      position:relative;
+      top: 5px;
+      display: inline-block;
+      width: 1px;
+      height: 18px;
+      background-color:#bebebe;
+    }
+  }
+  .option-item+.option-item{
+    margin-left: 2px;
+  }
+}
+// ----------------04.表单----------------
+.form-table{
+  color: $gray;
+  font-size: 12px;
+  tr+tr{
+    th,td{
+      padding-top:10px;
+    }
+  }
+  th{
+    font-weight: normal;
+    text-align: right;
+    padding-right: 15px;
+    input{
+      text-align: right;
+    }
+  }
+}
+// 查询清单库弹出
+.commListDialog{
+  width: 860px;
+  .search-sidebar{
+    @include float;
+    width: 198px;
+    .el-select{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .el-tree{
+      @include radius;
+      border: 1px solid $line;
+      height: 408px;
+      overflow: auto;
+      background-color: #f3f3f3;
+    }
+  }
+  .search-box{
+    margin-left: 208px;
+    .ui-option{
+      height: 34px;
+      margin:0 0 10px 0;
+    }
+  }
+}
+// 颜色标记 start
+.el-dropdown-menu.color-box{
+  @include clear;
+  width: 202px;
+  li{
+    @include float;
+    width: 18px;
+    height: 18px;
+    padding:0;
+    margin: 2px 0 2px 4px;
+  }
+  .tagColor1{
+    position: relative;
+    border:1px solid $line;
+    width: 16px;
+    height: 16px;
+    &:before{
+      position: absolute;
+      top: -4px;
+      left: 7px;
+      content: "";
+      display: block;
+      width: 1px;
+      height: 23px;
+      background-color:#f00;
+      transform: rotateZ(135deg);
+    }
+    background-color: #ffffff!important;
+  }
+  .tagColor2{
+    background-color: #0c0014!important;
+  }
+  .tagColor3{
+    background-color: #ff2c22!important;
+  }
+  .tagColor4{
+    background-color: #ff9900!important;
+  }
+  .tagColor5{
+    background-color: #ffd900!important;
+  }
+  .tagColor6{
+    background-color: #a3e142!important;
+  }
+  .tagColor7{
+    background-color: #36d9f1!important;
+  }
+  .tagColor8{
+    background-color: #4ca9ef!important;
+  }
+  .tagColor9{
+    background-color: #ab16d1!important;
+  }
+  .tagColor10{
+    background-color: #f2f2f1!important;
+  }
+  .tagColor11{
+    background-color: #969696!important;
+  }
+  .tagColor12{
+    background-color: #fddbd7!important;
+  }
+  .tagColor13{
+    background-color: #fde9d1!important;
+  }
+  .tagColor14{
+    background-color: #fff1cf!important;
+  }
+  .tagColor15{
+    background-color: #d5e9d7!important;
+  }
+  .tagColor16{
+    background-color: #dff3f3!important;
+  }
+  .tagColor17{
+    background-color: #cfe1ef!important;
+  }
+  .tagColor18{
+    background-color: #dfdbed!important;
+  }
+  .tagColor19{
+    background-color: #dedfde!important;
+  }
+  .tagColor20{
+    background-color: #575756!important;
+  }
+  .tagColor21{
+    background-color: #ef837c!important;
+  }
+  .tagColor22{
+    background-color: #f9c387!important;
+  }
+  .tagColor23{
+    background-color: #e7b322!important;
+  }
+  .tagColor24{
+    background-color: #9bbd9d!important;
+  }
+  .tagColor25{
+    background-color: #83cdd3!important;
+  }
+  .tagColor26{
+    background-color: #89b1cf!important;
+  }
+  .tagColor27{
+    background-color: #9389b1!important;
+  }
+  .tagColor28{
+    background-color: #c1c6c9!important;
+  }
+  .tagColor29{
+    background-color: #40464a!important;
+  }
+  .tagColor30{
+    background-color: #d51228!important;
+  }
+  .tagColor31{
+    background-color: #cf760a!important;
+  }
+  .tagColor32{
+    background-color: #8d624a!important;
+  }
+  .tagColor33{
+    background-color: #547a5c!important;
+  }
+  .tagColor34{
+    background-color: #00a3b1!important;
+  }
+  .tagColor35{
+    background-color: #3676a7!important;
+  }
+  .tagColor36{
+    background-color: #765c83!important;
+  }
+  .tagColor37{
+    background-color: #adadad!important;
+  }
+  .tagColor38{
+    background-color: #2a2a2a!important;
+  }
+  .tagColor39{
+    background-color: #a91812!important;
+  }
+  .tagColor40{
+    background-color: #894602!important;
+  }
+  .tagColor41{
+    background-color: #563624!important;
+  }
+  .tagColor42{
+    background-color: #00542e!important;
+  }
+  .tagColor43{
+    background-color: #00767a!important;
+  }
+  .tagColor44{
+    background-color: #184e76!important;
+  }
+  .tagColor45{
+    background-color: #520e6e!important;
+  }
+}
+
+
+.res_query {
+  &.clear {
+    border: 1px solid #cccccc;
+  }
+  .leftBar {
+    width: 30%;
+    float: left; 
+    max-height: 408px;   
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+  }
+  .rightBar {
+    width: 70%;
+    float: right;
+  }
+  .component-fade-enter-active, .component-fade-leave-active {
+    transition: opacity .3s ease;
+  }
+  .component-fade-enter, .component-fade-leave-active {
+    opacity: 0;
+  }
+  .selection_start td{
+    border-top: 3px solid #111111;
+  }
+  .selection_end td{
+    border-bottom: 3px solid #111111;
+  }
+  .selection td:first-child{
+    border-left: 3px solid #111111;
+  }
+  .selection td:last-child{
+    border-right: 3px solid #111111;
+  }
+  .selection_start th{
+    border-top: 3px solid #111111;
+  }
+  .selection_end th{
+    border-bottom: 3px solid #111111;
+  }
+  .selection th:first-child{
+    border-left: 3px solid #111111;
+  }
+  .selection th:last-child{
+    border-right: 3px solid #111111;
+  }
+  .icon-input_inner{
+    display: inline-block;
+    width: calc(100% - 25px);
+  }
+  .leftBar {
+    max-height: 440px;
+  }
+}
+
+// 颜色标记 end
+// 右键菜单
+.contextMenu{
+  @include radius;
+  position: absolute;
+  z-index: 2999;
+  background-color:#fff;
+  border:1px solid $line;
+  width: 128px;
+  display:none;
+  box-shadow: 0 2px 4px rgba(0,0,0,.12),0 0 6px rgba(0,0,0,.04);
+  li{
+    height: 24px;
+    line-height: 24px;
+    padding:0 10px;
+    cursor: pointer;
+    font-size: 12px;
+    color: $gray;
+    position: relative;
+    &:hover{
+      background-color:lighten($blue,33%);
+      color: $blue;
+      >ul{
+        display: block;
+      }
+    }
+  }
+  .subMenu{
+    &::after{
+      font-family:"icon" !important;
+      font-size:12px;
+      font-style:normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\e633";
+      position: absolute;
+      right: 3px;
+      top: auto;
+    }
+    ul{
+      @include radius;
+      display: none;
+      position: absolute;
+      top: -1px;
+      left: 128px;
+      width: 128px;
+      background-color:#fff;
+      border:1px solid $line;
+      box-shadow: 0 2px 4px rgba(0,0,0,.12),0 0 6px rgba(0,0,0,.04);
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@charset "utf-8";
+// 其他项目
+.qt{
+  // 分类
+  .class-edit-item{
+    margin: 0 0 10px 0;
+    text-align: center;    
+  }
+  .content{
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 220px;
+    right: 0;
+  }
+  // 项目信息
+  .qt-table{
+    position: absolute;
+    top: 44px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: 10px;
+  }
+  .el-dialog--small {
+    min-width : 520px;
+    width :600px;
+  }
+  .root-item {
+    line-height: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 20px;
+    color: black;
+  }
+  .root-item .el-icon-project {
+    font-size: 24px;
+    color: black;
+  }
+  .el-icon-project {
+    margin-left: 6px;
+  }
+  .root-item .el-icon-project {
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+// 费率清单
+.fl{
+  .content{
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 220px;
+    right: 0;
+  }
+  // 项目信息
+  .fl-table{
+    position: absolute;
+    top: 44px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: 10px;
+  }
+}

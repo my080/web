@@ -1,0 +1,200 @@
+@charset "utf-8";
+// 分部分项清单
+.tableGrid{
+  .tagColor2{
+    background-color: #0c0014!important;
+  }
+  .tagColor3{
+    background-color: #ff2c22!important;
+  }
+  .tagColor4{
+    background-color: #ff9900!important;
+  }
+  .tagColor5{
+    background-color: #ffd900!important;
+  }
+  .tagColor6{
+    background-color: #a3e142!important;
+  }
+  .tagColor7{
+    background-color: #36d9f1!important;
+  }
+  .tagColor8{
+    background-color: #4ca9ef!important;
+  }
+  .tagColor9{
+    background-color: #ab16d1!important;
+  }
+  .tagColor10{
+    background-color: #f2f2f1!important;
+  }
+  .tagColor11{
+    background-color: #969696!important;
+  }
+  .tagColor12{
+    background-color: #fddbd7!important;
+  }
+  .tagColor13{
+    background-color: #fde9d1!important;
+  }
+  .tagColor14{
+    background-color: #fff1cf!important;
+  }
+  .tagColor15{
+    background-color: #d5e9d7!important;
+  }
+  .tagColor16{
+    background-color: #dff3f3!important;
+  }
+  .tagColor17{
+    background-color: #cfe1ef!important;
+  }
+  .tagColor18{
+    background-color: #dfdbed!important;
+  }
+  .tagColor19{
+    background-color: #dedfde!important;
+  }
+  .tagColor20{
+    background-color: #575756!important;
+  }
+  .tagColor21{
+    background-color: #ef837c!important;
+  }
+  .tagColor22{
+    background-color: #f9c387!important;
+  }
+  .tagColor23{
+    background-color: #e7b322!important;
+  }
+  .tagColor24{
+    background-color: #9bbd9d!important;
+  }
+  .tagColor25{
+    background-color: #83cdd3!important;
+  }
+  .tagColor26{
+    background-color: #89b1cf!important;
+  }
+  .tagColor27{
+    background-color: #9389b1!important;
+  }
+  .tagColor28{
+    background-color: #c1c6c9!important;
+  }
+  .tagColor29{
+    background-color: #40464a!important;
+  }
+  .tagColor30{
+    background-color: #d51228!important;
+  }
+  .tagColor31{
+    background-color: #cf760a!important;
+  }
+  .tagColor32{
+    background-color: #8d624a!important;
+  }
+  .tagColor33{
+    background-color: #547a5c!important;
+  }
+  .tagColor34{
+    background-color: #00a3b1!important;
+  }
+  .tagColor35{
+    background-color: #3676a7!important;
+  }
+  .tagColor36{
+    background-color: #765c83!important;
+  }
+  .tagColor37{
+    background-color: #adadad!important;
+  }
+  .tagColor38{
+    background-color: #2a2a2a!important;
+  }
+  .tagColor39{
+    background-color: #a91812!important;
+  }
+  .tagColor40{
+    background-color: #894602!important;
+  }
+  .tagColor41{
+    background-color: #563624!important;
+  }
+  .tagColor42{
+    background-color: #00542e!important;
+  }
+  .tagColor43{
+    background-color: #00767a!important;
+  }
+  .tagColor44{
+    background-color: #184e76!important;
+  }
+  .tagColor45{
+    background-color: #520e6e!important;
+  }
+  .Level0 td:nth-child(2) .cell{
+    margin-left:0;
+  }
+  .Level1 td:nth-child(2) .cell{
+    margin-left:15px;
+  }
+  .Level2 td:nth-child(2) .cell{
+    margin-left:30px;
+  }
+  .Level3 td:nth-child(2) .cell{
+    margin-left:45px;
+  }
+  .Level4 td:nth-child(2) .cell{
+    margin-left:60px;
+  }
+  .Level5 td:nth-child(2) .cell{
+    margin-left:75px;
+  }
+  .Level6 td:nth-child(2) .cell{
+    margin-left:90px;
+  }
+  .Level7 td:nth-child(2) .cell{
+    margin-left:105px;
+  }
+  .Level8 td:nth-child(2) .cell{
+    margin-left:120px;
+  }
+  .Level9 td:nth-child(2) .cell{
+    margin-left:135px;
+  }
+  .Level10 td:nth-child(2) .cell{
+    margin-left:150px;
+  }
+  .el-table__body tr.current-row > td {
+    background: #ffffff;
+  }
+ .selection_start td{
+    border-top: 3px solid #111111;
+  }
+  .selection_end td{
+    border-bottom: 3px solid #111111;
+  }
+  .selection td:first-child{
+    border-left: 3px solid #111111;
+  }
+  .selection td:last-child{
+    border-right: 3px solid #111111;
+  }
+  .selection_start th{
+    border-top: 3px solid #111111;
+  }
+  .selection_end th{
+    border-bottom: 3px solid #111111;
+  }
+  .selection th:first-child{
+    border-left: 3px solid #111111;
+  }
+  .selection th:last-child{
+    border-right: 3px solid #111111;
+  }
+  .icon-input_inner{
+    display: inline-block;
+    width: calc(100% - 25px);
+  }
+}

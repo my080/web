@@ -1,0 +1,349 @@
+@charset "utf-8";
+// 分部分项清单
+.fbfx{
+  .fbfx-option{
+    .middle {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 16px;
+    }
+    .detail_btn {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      cursor: pointer;
+    }
+    .el-dialog{
+      width: 60%;
+      min-width: 800px;
+    }
+    .component-fade-enter-active, .component-fade-leave-active {
+      transition: opacity .3s ease;
+    }
+    .component-fade-enter, .component-fade-leave-active {
+      opacity: 0;
+    }
+    .icon-input_inner{
+      display: inline-block;
+      width: calc(100% - 25px);
+    }
+  }
+  .fbfx-table{
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: 10px;
+    .fbfx-table1{
+      height: 97%;
+      .ht_clone_left{
+        height:100%!important;
+        .wtHolder{
+          height: calc(100% - 17px)!important;
+        }
+      }
+    }
+    .lmmDetail,.fbfx-table1,.el-icon-caret-top{
+      transition-duration:0.5s;
+    }
+    .fbfx-line{
+      height: 3%;
+      text-align: center;
+      line-height: 1;
+      cursor: pointer;
+      border-bottom: 1px solid $line;
+      color: $icon;
+    }
+    .ht_master{
+      height: 100%;
+      .wtHolder{
+        height: 100%!important;
+      }
+    }
+  }
+  // 分部分项主子表
+  .fbfxactive{
+    .fbfx-table1{
+      height: 60%;
+    }
+    .lmmDetail{
+      height: 35%;
+    }
+    .fbfx-table2{
+      height: calc(100% - 55px);
+    }
+    .el-icon-caret-top{
+      transform:scaleY(-1);
+    }
+  }
+  .bctj,.sdsz{
+    width: 800px;
+    #tableGrid2-grid{
+      height: 400px;
+      overflow: auto;
+    }
+  }
+  .ContentBrushDialog{
+    .ui-option{
+      margin: 0 0 10px;
+    }
+    .tableGrid{  //锁定设置表格大小
+      width:100%;
+      height:500px;
+      overflow:hidden;
+    }
+  }
+  .AdjustCoefficientDialog{
+    width:400px;
+    min-width:400px;
+    .el-dialog__body {
+      padding-top:20px;
+      padding-right:40px;
+    }
+  }
+
+  .LockSettingDialog{
+    width:960px;
+    min-width:960px;
+    .ui-option{
+      margin: 0 0 10px;
+    }
+  }
+
+  .ColumnSettingDialog{
+    width:550px;
+    min-width:550px;
+    .el-dialog__body {
+      padding-top:20px;
+      padding-right:40px;
+    }
+  }
+  .templet-box{
+      @include clear;
+      height: 340px;
+      overflow: auto;
+      li{
+        @include float;
+        @include radius;
+        cursor: pointer;
+        width: 108px;
+        height: 83px;
+        margin:0 0 10px 10px;
+        padding: 10px;
+        border:1px solid transparent;
+        text-align: center;
+        background: lighten($blue,33%) url(../img/ico-templet.png) center 20px no-repeat;
+        &:hover{
+          border-color:$blue;
+        }
+        &.active{
+          border-color:$blue;
+        }
+        span{
+          @extend %text-overflow;
+          max-width: 9em;
+          display: inline-block;
+          margin-top: 60px;
+        }
+      }
+    }
+  td[class*=" tagColor"]{
+    .readonly{
+      background:transparent!important;
+    }
+  }
+  .tagColor1 td{
+    background-color: transparent!important;
+    color: $gray!important;
+  }
+  .tagColor2 td{
+    background-color: #0c0014!important;
+    color: #fff!important;
+  }
+  .tagColor3 td{
+    background-color: #ff2c22!important;
+    color: #fff!important;
+  }
+  .tagColor4 td{
+    background-color: #ff9900!important;
+  }
+  .tagColor5 td{
+    background-color: #ffd900!important;
+  }
+  .tagColor6 td{
+    background-color: #a3e142!important;
+  }
+  .tagColor7 td{
+    background-color: #36d9f1!important;
+  }
+  .tagColor8 td{
+    background-color: #4ca9ef!important;
+  }
+  .tagColor9 td{
+    background-color: #ab16d1!important;
+    color: #fff!important;
+  }
+  .tagColor10 td{
+    background-color: #f2f2f1!important;
+  }
+  .tagColor11 td{
+    background-color: #969696!important;
+  }
+  .tagColor12 td{
+    background-color: #fddbd7!important;
+  }
+  .tagColor13 td{
+    background-color: #fde9d1!important;
+  }
+  .tagColor14 td{
+    background-color: #fff1cf!important;
+  }
+  .tagColor15 td{
+    background-color: #d5e9d7!important;
+  }
+  .tagColor16 td{
+    background-color: #dff3f3!important;
+  }
+  .tagColor17 td{
+    background-color: #cfe1ef!important;
+  }
+  .tagColor18 td{
+    background-color: #dfdbed!important;
+  }
+  .tagColor19 td{
+    background-color: #dedfde!important;
+  }
+  .tagColor20 td{
+    background-color: #575756!important;
+    color: #fff!important;
+  }
+  .tagColor21 td{
+    background-color: #ef837c!important;
+  }
+  .tagColor22 td{
+    background-color: #f9c387!important;
+  }
+  .tagColor23 td{
+    background-color: #e7b322!important;
+  }
+  .tagColor24 td{
+    background-color: #9bbd9d!important;
+  }
+  .tagColor25 td{
+    background-color: #83cdd3!important;
+  }
+  .tagColor26 td{
+    background-color: #89b1cf!important;
+  }
+  .tagColor27 td{
+    background-color: #9389b1!important;
+  }
+  .tagColor28 td{
+    background-color: #c1c6c9!important;
+  }
+  .tagColor29 td{
+    background-color: #40464a!important;
+    color: #fff!important;
+  }
+  .tagColor30 td{
+    background-color: #d51228!important;
+    color: #fff!important;
+  }
+  .tagColor31 td{
+    background-color: #cf760a!important;
+  }
+  .tagColor32 td{
+    background-color: #8d624a!important;
+    color: #fff!important;
+  }
+  .tagColor33 td{
+    background-color: #547a5c!important;
+    color: #fff!important;
+  }
+  .tagColor34 td{
+    background-color: #00a3b1!important;
+    color: #fff!important;
+  }
+  .tagColor35 td{
+    background-color: #3676a7!important;
+    color: #fff!important;
+  }
+  .tagColor36 td{
+    background-color: #765c83!important;
+    color: #fff!important;
+  }
+  .tagColor37 td{
+    background-color: #adadad!important;
+  }
+  .tagColor38 td{
+    background-color: #2a2a2a!important;
+    color: #fff!important;
+  }
+  .tagColor39 td{
+    background-color: #a91812!important;
+    color: #fff!important;
+  }
+  .tagColor40 td{
+    background-color: #894602!important;
+    color: #fff!important;
+  }
+  .tagColor41 td{
+    background-color: #563624!important;
+    color: #fff!important;
+  }
+  .tagColor42 td{
+    background-color: #00542e!important;
+    color: #fff!important;
+  }
+  .tagColor43 td{
+    background-color: #00767a!important;
+    color: #fff!important;
+  }
+  .tagColor44 td{
+    background-color: #184e76!important;
+    color: #fff!important;
+  }
+  .tagColor45 td{
+    background-color: #520e6e!important;
+    color: #fff!important;
+  }
+
+  .Level0{
+    margin-left:0;
+  }
+  .Level1{
+    margin-left:15px;
+  }
+  .Level2{
+    margin-left:30px;
+  }
+  .Level3{
+    margin-left:45px;
+  }
+  .Level4{
+    margin-left:60px;
+  }
+  .Level5{
+    margin-left:75px;
+  }
+  .Level6{
+    margin-left:90px;
+  }
+  .Level7{
+    margin-left:105px;
+  }
+  .Level8{
+    margin-left:120px;
+  }
+  .Level9{
+    margin-left:135px;
+  }
+  .Level10{
+    margin-left:150px;
+  }
+  .add-templet{
+    width:420px;
+  }
+}

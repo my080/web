@@ -1,0 +1,35 @@
+@charset "utf-8";
+// 分部分项清单
+.bbfx{
+  .sidebar{
+    .ui-option{
+      margin: 0 0 10px 0;
+      text-align: center;
+      .option-item{
+        float: none;
+      }
+    }
+  }
+  .content{
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 220px;
+    right: 0;
+  }
+  // 项目信息
+  .bbfx-box{
+    position: absolute;
+    top: 44px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    margin: 10px;
+    border:1px solid $line;
+    background-color: #fff;
+  }
+  .pdf-wrap{
+    text-align: center;
+  }
+}

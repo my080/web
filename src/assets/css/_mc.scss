@@ -1,0 +1,54 @@
+@charset "utf-8";
+.mc {
+  // 费率清单
+  .content{
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+  }
+  // 项目信息
+  .fl-table{
+    position: absolute;
+    top: 44px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    margin: 10px;
+  }
+  .Level0{
+    margin-left:0;
+  }
+  .Level1{
+    margin-left:15px;
+  }
+  .Level2{
+    margin-left:30px;
+  }
+  .Level3{
+    margin-left:45px;
+  }
+  .Level4{
+    margin-left:60px;
+  }
+  .Level5{
+    margin-left:75px;
+  }
+  .Level6{
+    margin-left:90px;
+  }
+  .Level7{
+    margin-left:105px;
+  }
+  .Level8{
+    margin-left:120px;
+  }
+  .Level9{
+    margin-left:135px;
+  }
+  .Level10{
+    margin-left:150px;
+  }
+}

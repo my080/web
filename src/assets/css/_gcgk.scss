@@ -1,0 +1,115 @@
+@charset "utf-8";
+// 工程概况
+.gcgk{
+  .content{
+  }
+  // 项目信息
+  .project-info{
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 220px;
+    right: 0;
+    overflow: auto;
+    padding:30px 10px;
+    .el-form{
+      width: 460px;
+      padding: 30px;
+    }
+    .delItem{
+      position: absolute;
+    }
+  }
+
+  .project-spec{
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 220px;
+    right: 0;
+    overflow: auto;
+    padding:30px 10px;
+    .el-form{
+      width: 460px;
+      padding: 30px;
+    }
+    .delItem{
+      position: absolute;
+    }
+  }
+
+  .gctz-table{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  // 编制说明
+  .project-explain{
+    position: absolute;
+    top: 56px;
+    bottom: 0;
+    left: 220px;
+    right: 0;
+    overflow: hidden;
+    .save-project_explain{
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      z-index: 2;
+    }
+    .wangEditor-container{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border:none;
+      padding: 10px;
+      h1{
+        font-size: 2em;
+        font-weight: bold;
+      }
+      h2{
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      h3{
+        font-size: 1.17em;
+        font-weight: bold;
+      }
+      h4,h5,h6{
+        font-weight: bold;
+      }
+      ul{
+        list-style-type: disc;
+      }
+      ol{
+        list-style-type: decimal;
+      }
+    }
+    .wangEditor-menu-container{
+      height: 36px;
+      border-bottom: 1px solid $line;
+    }
+    .wangEditor-txt{
+      position: absolute;
+      top: 46px;
+      bottom:0;
+      left: 0;
+      right: 0;
+      height: auto!important;
+      i,em{
+        font-style:italic;
+      }
+    }
+    .wangEditor-menu-shadow{
+      border-bottom: 1px solid $line;
+      box-shadow:none;
+    }
+  }
+}
